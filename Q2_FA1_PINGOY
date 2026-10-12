@@ -1,4 +1,4 @@
-# THE FUNCTIONS
+
 def add(num1, num2):
     return num1 + num2
 
@@ -13,21 +13,20 @@ def divide(num1, num2):
         return "Cannot divide by zero!"
     return num1 / num2
 
-# PROGRAM
+
 print("=== SIMPLE CALCULATOR ===")
 
-# Get numbers from user
+
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-# Choose operation
 print("\n1 = Add")
 print("2 = Subtract")
 print("3 = Multiply")
 print("4 = Divide")
 choice = input("Enter your choice (1-4): ")
 
-# Call the right function
+
 if choice == "1":
     answer = add(num1, num2)
     sign = "+"
@@ -43,5 +42,5 @@ elif choice == "4":
 else:
     answer = "Invalid choice!"
 
-# Show result
+
 print("\nAnswer:", answer)
