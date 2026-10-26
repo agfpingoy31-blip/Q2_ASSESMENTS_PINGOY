@@ -1,0 +1,116 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lf0bqfLxUk-3",
+        "outputId": "877f68d4-14c3-46ba-91db-ab2ea1907387"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=== SIMPLE CALCULATOR ===\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "\n",
+        "def add(num1, num2):\n",
+        "    return num1 + num2\n",
+        "\n",
+        "def subtract(num1, num2):\n",
+        "    return num1 - num2\n",
+        "\n",
+        "def multiply(num1, num2):\n",
+        "    return num1 * num2\n",
+        "\n",
+        "def divide(num1, num2):\n",
+        "    if num2 == 0:\n",
+        "        return \"Cannot divide by zero!\"\n",
+        "    return num1 / num2\n",
+        "\n",
+        "# ===== MAIN PROGRAM =====\n",
+        "print(\"=== SIMPLE CALCULATOR ===\")\n",
+        "\n",
+        "# Get numbers from user\n",
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "# Choose operation\n",
+        "print(\"\\n1 = Add\")\n",
+        "print(\"2 = Subtract\")\n",
+        "print(\"3 = Multiply\")\n",
+        "print(\"4 = Divide\")\n",
+        "choice = input(\"Enter your choice (1-4): \")\n",
+        "\n",
+        "# Call the right function\n",
+        "if choice == \"1\":\n",
+        "    answer = add(num1, num2)\n",
+        "    sign = \"+\"\n",
+        "elif choice == \"2\":\n",
+        "    answer = subtract(num1, num2)\n",
+        "    sign = \"-\"\n",
+        "elif choice == \"3\":\n",
+        "    answer = multiply(num1, num2)\n",
+        "    sign = \"*\"\n",
+        "elif choice == \"4\":\n",
+        "    answer = divide(num1, num2)\n",
+        "    sign = \"/\"\n",
+        "else:\n",
+        "    answer = \"Invalid choice!\"\n",
+        "\n",
+        "# Show result\n",
+        "print(\"\\nAnswer:\", answer)\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "  — Sente\n",
+        "1. What functions did you create in your calculator program?\n",
+        "I created four functions for the basic arithmetic operations: addition, subtraction, multiplication, and division.\n",
+        "\n",
+        "2. What parameters did your functions use?\n",
+        "Each function uses two parameters called num1 and num2, which represent the two numbers that will be calculated.\n",
+        "\n",
+        "3. What arguments were passed when the functions were called?\n",
+        "When the user inputs their numbers, those values are passed as arguments into the corresponding function.\n",
+        "\n",
+        "4. How did your program use the returned value?\n",
+        "The function sends the calculated result back using the return statement, and the main program then displays that result to the user.\n",
+        "\n",
+        "5. Why is it better to divide the calculator program into functions instead of writing everything in one long block of code?\n",
+        "\n",
+        "Breaking the program into functions makes it much more organized, easier to read, simpler to fix when there is an error, and allows me to reuse code without rewriting it.\n",
+        "  "
+      ],
+      "metadata": {
+        "id": "_1iKcdHMWnic"
+      }
+    }
+  ]
+}
